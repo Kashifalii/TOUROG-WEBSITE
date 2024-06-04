@@ -43,8 +43,9 @@ header .main-content {
     top: 0;
     left: 0;
     z-index: 2;
-    width: 100%;
+    width: fit-content;
     height: 100%;
+    background: transparent;
 }
 
 /* Navbar*/
@@ -122,4 +123,30 @@ header .nav-content {
     left: 100%;
     z-index: 1;
     transition: all ease .5;
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+}
+
+header .nav-content .nav-links {
+    padding-left: 0;
+    list-style: none;
+    gap: 30px;
+}
+
+header .nav-content .nav-links .links {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+}
+
+header .nav-content .nav-links .links li {
+    transition: all ease .3s;
+}
+
+header .nav-content .nav-links .links li:hover {
+    color: rgb(2, 225, 147);
 }

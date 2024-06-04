@@ -36,6 +36,5 @@ navBtn.addEventListener('click', () => {
         navContent.style.transition = "all ease .5s";
     } else {
         navContent.style.left = "100%";
-
     }
 });
