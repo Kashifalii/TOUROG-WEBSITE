@@ -8,12 +8,106 @@
     color: white;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(91, 91, 91);
+    border-radius: 50px;
+}
+
 header {
     height: 100vh;
     overflow: hidden;
+    position: relative;
 }
 
+/* swiper */
 header .swiper {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+}
+
+header .swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* filter: blur(1px); */
+}
+
+/* main-content */
+header .main-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+/* Navbar*/
+header .main-content .navbar {
+    width: 130px;
+    height: 100%;
+    border-right: 1px solid #8888886f;
+    padding: 20px 10px;
+    justify-content: space-between;
+}
+
+header .main-content .navbar #logo {
+    width: 65px;
+    height: 70px;
+}
+
+header .navbar .offcanvas-btn {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+header .navbar .offcanvas-btn span {
+    width: 30px;
+    height: 2.4px;
+    background-color: #fff;
+    transition: all ease 0.4s;
+    margin: 0 auto;
+}
+
+header .navbar .offcanvas-btn:hover span {
+    background-color: rgb(2, 225, 147);
+}
+
+header .navbar .offcanvas-btn:hover span:nth-child(1),
+header .navbar .offcanvas-btn:hover span:nth-child(3) {
+    width: 60%;
+    margin: 0 auto;
+    transition: all ease 0.4s;
+}
+
+header .navbar #follow {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transform: rotate(-90deg);
+    position: relative;
+    bottom: 50px;
+    transition: all ease .3s;
+}
+
+header .navbar #login {
+    font-size: 30px;
+}
+
+header .navbar #login i {
+    transition: all ease .3s;
+}
+
+header .navbar #follow:hover,
+header .navbar #login:hover i {
+    color: rgb(2, 225, 147);
+    transition: all ease .3s;
 }
