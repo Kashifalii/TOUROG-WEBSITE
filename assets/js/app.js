@@ -26,15 +26,23 @@ var swiper = new Swiper(".mySwiper", {
 
 // navbar
 
-let navBtn = document.querySelector('.offcanvas-btn');
-let navContent = document.querySelector('.nav-content');
+const navBtn = document.querySelector('.offcanvas-btn');
+const navContent = document.querySelector('.nav-content');
+const navlinks = document.querySelector('.nav-links');
 
 navBtn.addEventListener('click', () => {
     navBtn.classList.toggle('active');
     if (navBtn.classList.contains('active')) {
         navContent.style.left = 0;
-        navContent.style.transition = "all ease .5s";
+        navContent.style.transition = "all ease 1s";
+        setInterval(() => {
+            navlinks.style.opacity = 1;
+            navlinks.style.transform = "translateX(0px)";
+            navlinks.style.transition = "all ease .5s";
+        }, 1000);
     } else {
         navContent.style.left = "100%";
+        navlinks.style.opacity = 0;
+        navlinks.style.transform = "translateX(200px) !important";
     }
 });
