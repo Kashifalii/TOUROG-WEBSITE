@@ -111,3 +111,15 @@ header .navbar #login:hover i {
     color: rgb(2, 225, 147);
     transition: all ease .3s;
 }
+
+/* navbar-content */
+header .nav-content {
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+    transition: all ease .5;
+}
