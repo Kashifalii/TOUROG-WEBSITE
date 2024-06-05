@@ -169,6 +169,10 @@ header .text-content h1 {
     font-weight: 700;
     text-transform: uppercase;
     color: white;
-    margin: 0;
     width: 50%;
+}
+
+header .text-content #one {
+    margin-left: 100px;
+    transition: all ease 5s;
 }

@@ -46,3 +46,28 @@ navBtn.addEventListener('click', () => {
         navlinks.style.transform = "translateX(200px) !important";
     }
 });
+
+
+// text-content
+
+const one = document.getElementById('one');
+console.log(one);
+
+// window.addEventListener("load", () => {
+
+//     one.style.marginLeft = "0px !important";
+// });
+
+// function left() {
+//     // text.style.color = "blue";
+
+// };
+
+setInterval(() => {
+    one.innerText = "Hello";
+    one.style.transition = "all ease .7s";
+}, 1000);
+setInterval(() => {
+    one.innerText = "bye";
+    one.style.transition = "all ease .7s";
+}, 2000);
