@@ -50,20 +50,17 @@ navBtn.addEventListener('click', () => {
 
 // text-content
 
-const one = document.getElementById('one');
-console.log(one);
+// let one = document.getElementById('one');
+// console.log(one);
 
-window.addEventListener("load", () => {
+// window.addEventListener("load", () => {
 
-    setInterval(() => {
-        one.style.Left = 0;
-    }, 3100);
-});
+//     setInterval(() => {
+//         one.style.Left = "0px";
+//     }, 3100);
+// });
 
-// function left() {
-//     // text.style.color = "blue";
 
-// };
 
 // loader-effect
 

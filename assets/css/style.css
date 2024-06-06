@@ -170,9 +170,9 @@ header .text-content #one {
     font-weight: 700;
     text-transform: uppercase;
     color: white;
-    width: 50%;
+    /* width: 50%; */
     position: absolute;
-    left: 50%;
+    left: 500px;
     transition: all ease 5s;
 }
 
