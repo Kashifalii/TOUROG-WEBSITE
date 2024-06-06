@@ -53,21 +53,32 @@ navBtn.addEventListener('click', () => {
 const one = document.getElementById('one');
 console.log(one);
 
-// window.addEventListener("load", () => {
+window.addEventListener("load", () => {
 
-//     one.style.marginLeft = "0px !important";
-// });
+    setInterval(() => {
+        one.style.Left = 0;
+    }, 3100);
+});
 
 // function left() {
 //     // text.style.color = "blue";
 
 // };
 
-setInterval(() => {
-    one.innerText = "Hello";
-    one.style.transition = "all ease .7s";
-}, 1000);
-setInterval(() => {
-    one.innerText = "bye";
-    one.style.transition = "all ease .7s";
-}, 2000);
+// loader-effect
+
+let loader = document.querySelector('.loader-wrapper');
+let svg = document.querySelector('.loader');
+
+window.addEventListener('load', () => {
+    loader.style.opacity = 1;
+    loader.style.transition = "all ease 1s";
+    loader.style.top = 0;
+    setInterval(() => {
+        svg.style.opacity = 1;
+        svg.style.transition = "all ease 1s";
+    }, 1500);
+    setTimeout(() => {
+        loader.style.display = 'none';
+    }, 3000);
+});
