@@ -50,15 +50,15 @@ navBtn.addEventListener('click', () => {
 
 // text-content
 
-// let one = document.getElementById('one');
-// console.log(one);
+let one = document.getElementById('one');
 
-// window.addEventListener("load", () => {
+window.onload = () => {
+    setTimeout(() => {
 
-//     setInterval(() => {
-//         one.style.Left = "0px";
-//     }, 3100);
-// });
+        one.style.opacity = "1";
+        one.style.transition = "all ease 1s";
+    }, 3100);
+}
 
 
 
@@ -70,7 +70,7 @@ let svg = document.querySelector('.loader');
 window.addEventListener('load', () => {
     loader.style.opacity = 1;
     loader.style.transition = "all ease 1s";
-    loader.style.top = 0;
+    loader.style.top = "-100%";
     setInterval(() => {
         svg.style.opacity = 1;
         svg.style.transition = "all ease 1s";
