@@ -35,7 +35,6 @@ header .swiper .swiper-wrapper .swiper-slide img {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    /* filter: blur(1px); */
 }
 
 /* main-content */
@@ -170,9 +169,25 @@ header .text-content #one {
     font-weight: 700;
     text-transform: uppercase;
     color: white;
-    /* width: 50%; */
+    width: 50%;
     position: absolute;
+    top: 100%;
+    opacity: 0;
     transition: all ease 5s;
+}
+
+header .text-content #one #ex {
+    font-weight: 200;
+    padding-left: 250px;
+}
+
+
+header .text-content #one #dg {
+    font-weight: 200;
+}
+
+header .text-content #one #wb {
+    padding-left: 100px;
 }
 
 /* onload effect */

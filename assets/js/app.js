@@ -54,9 +54,9 @@ let one = document.getElementById('one');
 
 window.onload = () => {
     setTimeout(() => {
-
+        one.style.top = "20%";
         one.style.opacity = "1";
-        one.style.transition = "all ease 1s";
+        one.style.transition = "all ease 2s";
     }, 3100);
 }
 
