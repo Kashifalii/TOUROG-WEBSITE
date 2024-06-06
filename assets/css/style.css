@@ -170,10 +170,8 @@ header .text-content #one {
     text-transform: uppercase;
     color: white;
     width: 50%;
-    position: absolute;
-    top: 100%;
+    margin-top: 500px;
     opacity: 0;
-    transition: all ease 5s;
 }
 
 header .text-content #one #ex {

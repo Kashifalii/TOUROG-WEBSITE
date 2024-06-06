@@ -53,11 +53,11 @@ navBtn.addEventListener('click', () => {
 let one = document.getElementById('one');
 
 window.onload = () => {
-    setTimeout(() => {
-        one.style.top = "20%";
+    setInterval(() => {
+        one.style.marginTop = "0";
         one.style.opacity = "1";
         one.style.transition = "all ease 2s";
-    }, 3100);
+    }, 2000);
 }
 
 
@@ -68,14 +68,11 @@ let loader = document.querySelector('.loader-wrapper');
 let svg = document.querySelector('.loader');
 
 window.addEventListener('load', () => {
-    loader.style.opacity = 1;
-    loader.style.transition = "all ease 1s";
-    loader.style.top = "-100%";
     setInterval(() => {
-        svg.style.opacity = 1;
-        svg.style.transition = "all ease 1s";
-    }, 1500);
-    setTimeout(() => {
         loader.style.display = 'none';
-    }, 3000);
+        loader.style.opacity = 0;
+        loader.style.transition = "all ease 1s";
+        loader.style.top = "-100%";
+    }, 2000);
+
 });
