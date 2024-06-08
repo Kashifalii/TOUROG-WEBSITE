@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
 * {
     padding: 0;
@@ -117,7 +118,7 @@ header .navbar #login:hover i {
 header .nav-content {
     width: 100%;
     height: 100%;
-    background: #222327;
+    background: linear-gradient(45deg, #222327 50%, rgb(2, 225, 147)50%);
     position: absolute;
     top: 0;
     left: 100%;
@@ -151,6 +152,7 @@ header .nav-content .nav-links .links li {
 
 header .nav-content .nav-links .links li:hover {
     color: rgb(2, 225, 147);
+    padding-left: 10px;
 }
 
 /* text-content */
@@ -359,13 +361,6 @@ header .loader-wrapper .loader {
 }
 
 /* modal */
-
-/* header .modal .modal-body {
-    padding: 0;
-    display: flex;
-    juc
-} */
-
 header .modal .modal-body .form {
     display: flex;
     flex-direction: column;
@@ -482,4 +477,78 @@ header .modal .modal-body .form {
 .btn.apple:hover {
     color: #4b92d0;
     transition: all ease .3s;
+}
+
+/* media query */
+
+@media (max-width: 1080px) {
+    header .text-content #one {
+        font-size: 75px;
+    }
+
+    header .nav-content {
+        background: linear-gradient(48.5deg, #222327 60%, rgb(2, 225, 147) 40%);
+    }
+}
+
+@media (max-width: 965px) {
+    header .text-content #one {
+        font-size: 65px;
+    }
+
+    header .text-content #one #ex {
+        padding-left: 87px;
+    }
+
+    header .text-content {
+        align-items: center;
+        justify-content: center;
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    header .text-content {
+        padding-left: 60px;
+    }
+
+    header .text-content #one {
+        line-height: 100px;
+        font-size: 80px;
+        font-weight: 400;
+        width: 45%;
+        font-family: "Dancing Script", cursive;
+        text-transform: capitalize;
+    }
+
+    header .text-content #one #ex,
+    header .text-content #one #dg,
+    header .text-content #one #wb {
+        padding: 0;
+        font-weight: 400;
+        font-family: "Dancing Script", cursive;
+        text-transform: capitalize;
+    }
+
+    header .nav-content {
+        background: #222327;
+    }
+}
+
+@media (max-width: 575px) {
+
+    header .text-content #one {
+        line-height: 100px;
+        font-size: 60px;
+    }
+
+    header .nav-content .nav-links .links {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .nav-content .nav-links .links {
+        font-size: 20px;
+    }
 }
