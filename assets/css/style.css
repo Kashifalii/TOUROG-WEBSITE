@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+/*   font-family: "Josefin Sans", sans-serif; */
 
 * {
     padding: 0;
@@ -551,4 +553,115 @@ header .modal .modal-body .form {
     header .nav-content .nav-links .links {
         font-size: 20px;
     }
+}
+
+/* section-1 */
+.sec1 {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+
+/* 1st */
+.sec1 .container .about .first #heading {
+    color: white;
+    font-size: 50px;
+    width: 75%;
+    margin: 0;
+}
+
+.sec1 .container .about .first .btn {
+    margin-top: 60px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 1.8rem 2.3rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(27, 27, 37);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    box-shadow: 0px 0px 60px rgba(2, 225, 147, 0.147);
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.2));
+    transition: all ease .7s;
+}
+
+.sec1 .container .about .first .btn:hover {
+    background-color: rgb(3, 255, 167);
+    color: #222327;
+    transition: all ease .7s;
+}
+
+/* 2nd */
+
+.sec1 .container .about .second #para {
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+
+.sec1 .container .about .second #name {
+    font-size: 22px;
+    font-weight: 600;
+    width: fit-content;
+    position: relative;
+    margin: 0;
+}
+
+.sec1 .container .about .second #name::after {
+    content: "";
+    width: 70px;
+    height: 1.5px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 16px;
+    right: -90px;
+}
+
+.sec1 .container .about .second #work {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 13px;
+    color: #9b9b9b;
+    margin-top: 2px;
+}
+
+.sec1 .container .about .second #exp {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.sec1 .container .about .second #exp #num {
+    font-size: 120px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+
+.sec1 .container .about .second #exp #txt {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: .5px;
+    color: #ffffff;
+    margin-top: 37px;
+    margin-bottom: 0;
+}
+
+
+.sec1 .container .about .first .s1-one {
+    opacity: 0;
+    padding-top: 70px;
+    transition: all ease .7s;
+}
+
+.sec1 .container .about .second .s1-two {
+    opacity: 0;
+    padding-top: 70px;
+    transition: all ease .7s;
 }

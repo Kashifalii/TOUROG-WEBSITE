@@ -76,3 +76,26 @@ window.addEventListener('load', () => {
     }, 2000);
 
 });
+
+// section-1 text effect
+
+let sec1Heading = document.querySelector(".s1-one");
+let sec2Heading = document.querySelector(".s1-two");
+
+console.log(scrollY)
+// if (screen.height == 800) {
+//     sec1Heading.style.opacity = 1;
+// }
+
+let scrolling = 270;
+
+window.onscroll = function () {
+    if (scrolling < scrollY) {
+
+        sec1Heading.style.opacity = 1;
+        sec2Heading.style.opacity = 1;
+        sec1Heading.style.paddingTop = 0;
+        sec2Heading.style.paddingTop = 0;
+
+    }
+}
