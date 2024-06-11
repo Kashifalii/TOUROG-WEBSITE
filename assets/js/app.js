@@ -77,20 +77,20 @@ window.addEventListener('load', () => {
 
 });
 
-// section-1 text effect
+// onload effects
 
 let sec1Heading = document.querySelector(".s1-one");
 let sec2Heading = document.querySelector(".s1-two");
 
-console.log(scrollY)
-// if (screen.height == 800) {
-//     sec1Heading.style.opacity = 1;
-// }
+let s2After = document.querySelector(".s2-a");
+let s2Before = document.querySelector(".s2-b");
 
-let scrolling = 270;
 
 window.onscroll = function () {
-    if (scrolling < scrollY) {
+
+    // section-1 text effect
+    let scrolling1 = 270;
+    if (scrolling1 < scrollY) {
 
         sec1Heading.style.opacity = 1;
         sec2Heading.style.opacity = 1;
@@ -98,4 +98,30 @@ window.onscroll = function () {
         sec2Heading.style.paddingTop = 0;
 
     }
+
+    // section-2 heading effect
+    let scrolling2 = 800;
+    if (scrolling2 < scrollY) {
+
+        s2After.style.right = 0;
+        s2Before.style.left = 0;
+        s2After.style.opacity = 1;
+        s2Before.style.opacity = 1;
+
+        setInterval(() => {
+            s2After.style.transform = "rotate(40deg)";
+            s2Before.style.transform = "rotate(40deg)";
+        }, 600);
+    }
 }
+
+console.log(scrollY)
+
+
+
+
+// window.onscroll = function () {
+
+
+// };
+
