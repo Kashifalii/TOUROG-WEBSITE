@@ -553,6 +553,10 @@ header .modal .modal-body .form {
     header .nav-content .nav-links .links {
         font-size: 20px;
     }
+
+    header .text-content #one {
+        font-size: 45px;
+    }
 }
 
 /* section-1 */
@@ -665,3 +669,67 @@ header .modal .modal-body .form {
     padding-top: 70px;
     transition: all ease .7s;
 }
+
+/* media query */
+
+@media (max-width: 1399.98px) {
+    .sec1 .container .about .first #heading {
+        font-size: 44px;
+    }
+
+    .sec1 .container .about .second #para {
+        font-size: 19px;
+    }
+
+    .sec1 .container .about .second #name {
+        font-size: 21px;
+    }
+
+    .sec1 .container .about .second #exp #num {
+        font-size: 115px;
+    }
+
+    .sec1 .container .about .second #exp #txt {
+        font-size: 19px;
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .sec1 .container .about .first #heading {
+        font-size: 36px;
+    }
+
+    .sec1 .container .about .first .btn {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .sec1 .container .about .first {
+        margin-bottom: 100px;
+    }
+
+    .sec1 .container .about .first #heading {
+        width: 78%;
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 574.98px) {
+    .sec1 .container .about .first #heading {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sec1 .container .about .second #para {
+        font-size: 18px;
+    }
+
+    .sec1 .container .about .first #heading {
+        width: 89%;
+    }
+}
+
+/* section-2 */
