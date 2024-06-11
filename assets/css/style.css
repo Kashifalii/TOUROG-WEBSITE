@@ -742,27 +742,29 @@ header .modal .modal-body .form {
     font-size: 50px;
     width: 40%;
     position: relative;
+    opacity: 0;
+    transition: all ease .5s;
 }
 
 .sec2 .container .heading h1 #after {
     width: 1.5px;
-    height: 150px;
+    height: 130px;
     background: rgb(3, 255, 167);
     position: absolute;
     bottom: -30px;
     right: 50%;
     opacity: 0;
-    transition: all ease .3s;
+    transition: all ease .5s;
 }
 
 
 .sec2 .container .heading h1 #before {
     width: 1.5px;
-    height: 150px;
+    height: 130px;
     background: white;
     position: absolute;
     top: -70px;
     left: 50%;
     opacity: 0;
-    transition: all ease .3s;
+    transition: all ease .5s;
 }

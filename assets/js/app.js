@@ -79,9 +79,10 @@ window.addEventListener('load', () => {
 
 // onload effects
 
-let sec1Heading = document.querySelector(".s1-one");
-let sec2Heading = document.querySelector(".s1-two");
+let sec1One = document.querySelector(".s1-one");
+let sec1Two = document.querySelector(".s1-two");
 
+let s2Heading = document.getElementById("s2-heading");
 let s2After = document.querySelector(".s2-a");
 let s2Before = document.querySelector(".s2-b");
 
@@ -92,17 +93,17 @@ window.onscroll = function () {
     let scrolling1 = 270;
     if (scrolling1 < scrollY) {
 
-        sec1Heading.style.opacity = 1;
-        sec2Heading.style.opacity = 1;
-        sec1Heading.style.paddingTop = 0;
-        sec2Heading.style.paddingTop = 0;
+        sec1One.style.opacity = 1;
+        sec1Two.style.opacity = 1;
+        sec1One.style.paddingTop = 0;
+        sec1Two.style.paddingTop = 0;
 
     }
 
     // section-2 heading effect
     let scrolling2 = 800;
     if (scrolling2 < scrollY) {
-
+        s2Heading.style.opacity = 1;
         s2After.style.right = 0;
         s2Before.style.left = 0;
         s2After.style.opacity = 1;
@@ -111,17 +112,15 @@ window.onscroll = function () {
         setInterval(() => {
             s2After.style.transform = "rotate(40deg)";
             s2Before.style.transform = "rotate(40deg)";
-        }, 600);
+        }, 500);
+
+        setInterval(() => {
+            s2After.style.display = "none";
+            s2Before.style.display = "none";
+        }, 1500);
     }
 }
 
 console.log(scrollY)
 
-
-
-
-// window.onscroll = function () {
-
-
-// };
 
