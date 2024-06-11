@@ -789,15 +789,16 @@ header .modal .modal-body .form {
 }
 
 .sec2 .container .card-wrapper .crd-wrap:hover .crd {
-    background: #1a1a1a;
+    background: #141414;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.184);
 }
 
 .sec2 .container .card-wrapper .crd-wrap #dots {
-    width: 130px;
-    height: 180px;
+    width: 120px;
+    height: 170px;
     position: absolute;
-    right: -50px;
-    bottom: -50px;
+    right: -40px;
+    bottom: -40px;
     z-index: 0;
     opacity: 0;
     transition: all ease .3s;
