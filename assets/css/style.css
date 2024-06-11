@@ -768,3 +768,68 @@ header .modal .modal-body .form {
     opacity: 0;
     transition: all ease .5s;
 }
+
+/* card-wrapper */
+
+.sec2 .container .card-wrapper .crd {
+    width: 310px;
+    height: fit-content;
+    background: #1e1f23;
+    padding: 60px 50px;
+    position: relative;
+    z-index: 2;
+    transition: all ease .3s;
+}
+
+.sec2 .container .card-wrapper .crd-wrap {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    transition: all ease .3s;
+}
+
+.sec2 .container .card-wrapper .crd-wrap:hover .crd {
+    background: #1a1a1a;
+}
+
+.sec2 .container .card-wrapper .crd-wrap #dots {
+    width: 130px;
+    height: 180px;
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    z-index: 0;
+    opacity: 0;
+    transition: all ease .3s;
+}
+
+.sec2 .container .card-wrapper .crd-wrap:hover #dots {
+    opacity: 1;
+}
+
+.sec2 .container .card-wrapper .crd #icon {
+    width: 70px;
+    height: 80px;
+    margin-bottom: 35px;
+}
+
+.sec2 .container .card-wrapper .crd #title {
+    margin-bottom: 20px;
+}
+
+.sec2 .container .card-wrapper .crd #list {
+    list-style: none;
+    padding-left: 0;
+    gap: 10px;
+}
+
+.sec2 .container .card-wrapper .crd #list li {
+    font-weight: 300;
+    color: #b7b7b7;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.sec2 .container .card-wrapper .crd #list li:hover {
+    color: rgb(3, 255, 167);
+}
