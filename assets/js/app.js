@@ -79,9 +79,11 @@ window.addEventListener('load', () => {
 
 // onload effects
 
+// section-1
 let sec1One = document.querySelector(".s1-one");
 let sec1Two = document.querySelector(".s1-two");
-
+// section-2	
+let s2Cards = document.querySelector(".s2-crds");
 let s2Heading = document.getElementById("s2-heading");
 let s2After = document.querySelector(".s2-a");
 let s2Before = document.querySelector(".s2-b");
@@ -119,6 +121,13 @@ window.onscroll = function () {
             s2Before.style.display = "none";
         }, 1500);
     }
+
+    let scrolling3 = 1000;
+    if (scrolling3 < scrollY) {
+        s2Cards.style.transform = "translateY(0)";
+        s2Cards.style.opacity = 1;
+    }
+
 }
 
 console.log(scrollY)
