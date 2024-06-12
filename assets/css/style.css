@@ -949,4 +949,15 @@ header .modal .modal-body .form {
     }
 }
 
-@media (max-width: 480px) {}
+/* section-3 */
+.sec3 {
+    padding: 100px 0;
+}
+
+.sec3 .container .main-wrapper .crd-wrap .img-wrap {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
