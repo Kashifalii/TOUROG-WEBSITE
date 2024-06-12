@@ -954,10 +954,44 @@ header .modal .modal-body .form {
     padding: 100px 0;
 }
 
-.sec3 .container .main-wrapper .crd-wrap .img-wrap {
-    width: 90%;
-    height: 100%;
+.sec3 .container .main-wrapper .crd-wrap {
+    height: fit-content;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.sec3 .container .main-wrapper .crd-wrap .img-wrap {
+    width: 90%;
+    height: 90%;
+}
+
+.sec3 .container .main-wrapper .crd-wrap .img-wrap #dots {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    z-index: 0;
+    width: 150px;
+    height: 250px;
+}
+
+.sec3 .container .main-wrapper .crd-wrap .txt-wrap {
+    width: 90%;
+    padding-top: 30px;
+    background: transparent;
+}
+
+.sec3 .container .main-wrapper .crd-wrap .txt-wrap h2 {
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.sec3 .container .main-wrapper .crd-wrap .txt-wrap p {
+    color: rgb(173, 173, 173);
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
 }
