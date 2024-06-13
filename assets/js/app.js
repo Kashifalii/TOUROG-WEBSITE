@@ -141,7 +141,7 @@ window.onscroll = function () {
 
     // setion-4 effect
 
-    let scrolling5 = 3200;
+    let scrolling5 = 3000;
     if (scrolling5 < scrollY) {
         s4First.style.paddingTop = 0;
         s4First.style.opacity = 1;
