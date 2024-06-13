@@ -1021,6 +1021,12 @@ header .modal .modal-body .form {
     margin: 0;
 }
 
+.sec3 .container .s3-wrapper {
+    padding-top: 200px;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
 /* media query */
 
 @media (max-width: 1199.98px) {

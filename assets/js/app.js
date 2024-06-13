@@ -87,6 +87,8 @@ let s2Cards = document.querySelector(".s2-crds");
 let s2Heading = document.getElementById("s2-heading");
 let s2After = document.querySelector(".s2-a");
 let s2Before = document.querySelector(".s2-b");
+// section-3
+let s3Wrapper = document.querySelector(".s3-wrapper");
 
 
 window.onscroll = function () {
@@ -128,6 +130,12 @@ window.onscroll = function () {
         s2Cards.style.opacity = 1;
     }
 
+    // setion-3 effect
+    let scrolling4 = 1600;
+    if (scrolling4 < scrollY) {
+        s3Wrapper.style.paddingTop = 0;
+        s3Wrapper.style.opacity = 1;
+    }
 }
 
 console.log(scrollY)
