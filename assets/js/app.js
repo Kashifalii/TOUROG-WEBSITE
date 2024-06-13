@@ -61,7 +61,6 @@ window.onload = () => {
 }
 
 
-
 // loader-effect
 
 let loader = document.querySelector('.loader-wrapper');
@@ -90,6 +89,9 @@ let s2Before = document.querySelector(".s2-b");
 // section-3
 let s3Wrapper = document.querySelector(".s3-wrapper");
 
+// section-4
+const s4First = document.querySelector(".s4-one");
+const s4Second = document.querySelector(".s4-two");
 
 window.onscroll = function () {
 
@@ -135,6 +137,15 @@ window.onscroll = function () {
     if (scrolling4 < scrollY) {
         s3Wrapper.style.paddingTop = 0;
         s3Wrapper.style.opacity = 1;
+    }
+
+    // setion-4 effect
+
+    let scrolling5 = 3200;
+    if (scrolling5 < scrollY) {
+        s4First.style.paddingTop = 0;
+        s4First.style.opacity = 1;
+        s4Second.style.opacity = 1;
     }
 }
 
