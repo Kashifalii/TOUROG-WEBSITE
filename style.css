@@ -527,11 +527,18 @@ header .modal .modal-body .form {
 
     header .nav-content {
         background: #222327;
+        padding: 0;
+        justify-content: center;
     }
 }
 
 
 @media (max-width: 575px) {
+    header {
+        height: 680px;
+    }
+
+
     header .main-content {
         width: 100%;
     }
