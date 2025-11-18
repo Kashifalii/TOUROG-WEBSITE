@@ -535,7 +535,7 @@ header .modal .modal-body .form {
 
 @media (max-width: 575px) {
     header {
-        height: 680px;
+        height: 900px;
     }
 
 
@@ -546,8 +546,10 @@ header .modal .modal-body .form {
     header .main-content .navbar {
         width: 100%;
         height: fit-content;
-        padding: 20px 10px;
+        padding: 20px;
         justify-content: space-between;
+        border-right: none;
+        border-bottom: 1px solid #8888886f;
     }
 
     header .main-content .navbar #follow {
@@ -581,10 +583,6 @@ header .modal .modal-body .form {
 }
 
 @media (max-width: 480px) {
-    header .nav-content .nav-links .links {
-        font-size: 20px;
-    }
-
     header .text-content #one {
         font-size: 45px;
     }
