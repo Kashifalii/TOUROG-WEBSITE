@@ -117,6 +117,8 @@ header .navbar #login:hover i {
     transition: all ease .3s;
 }
 
+
+
 /* navbar-content */
 header .nav-content {
     width: 100%;
@@ -516,20 +518,10 @@ header .modal .modal-body .form {
     }
 
     header .text-content #one {
-        line-height: 100px;
-        font-size: 80px;
+        line-height: 65px;
+        font-size: 55px;
         font-weight: 400;
         width: 45%;
-        font-family: "Dancing Script", cursive;
-        text-transform: capitalize;
-    }
-
-    header .text-content #one #ex,
-    header .text-content #one #dg,
-    header .text-content #one #wb {
-        padding: 0;
-        font-weight: 400;
-        font-family: "Dancing Script", cursive;
         text-transform: capitalize;
     }
 
@@ -538,11 +530,42 @@ header .modal .modal-body .form {
     }
 }
 
+
 @media (max-width: 575px) {
+    header .main-content {
+        width: 100%;
+    }
+
+    header .main-content .navbar {
+        width: 100%;
+        height: fit-content;
+        padding: 20px 10px;
+        justify-content: space-between;
+    }
+
+    header .main-content .navbar #follow {
+        display: none;
+    }
+
+    /* --- */
+    header .text-content {
+        padding-left: 0px;
+    }
+
 
     header .text-content #one {
-        line-height: 100px;
-        font-size: 60px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .text-content #one #ex,
+    header .text-content #one #wb,
+    header .text-content #one #dg {
+        padding-left: 0px;
+        font-weight: 400;
     }
 
     header .nav-content .nav-links .links {
