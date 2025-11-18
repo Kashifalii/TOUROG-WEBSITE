@@ -1,47 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-/*   font-family: "Josefin Sans", sans-serif; */
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap);
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color: white;
-    scroll-behavior: smooth;
+    color: #fff;
+    scroll-behavior: smooth
 }
 
 ::-webkit-scrollbar {
-    width: 4px;
+    width: 4px
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(2, 225, 147);
-    border-radius: 50px;
+    background-color: #02e193;
+    border-radius: 50px
 }
 
 header {
     height: 100vh;
     overflow: hidden;
-    position: relative;
+    position: relative
 }
 
-/* swiper */
 header .swiper {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover
 }
 
 header .swiper .swiper-wrapper .swiper-slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: center
 }
 
-/* main-content */
 header .main-content {
     position: absolute;
     top: 0;
@@ -49,21 +46,20 @@ header .main-content {
     z-index: 2;
     width: fit-content;
     height: 100%;
-    background: transparent;
+    background: #fff0
 }
 
-/* Navbar*/
 header .main-content .navbar {
     width: 130px;
     height: 100%;
     border-right: 1px solid #8888886f;
     padding: 20px 10px;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 header .main-content .navbar #logo {
     width: 65px;
-    height: 70px;
+    height: 70px
 }
 
 header .navbar .offcanvas-btn {
@@ -71,7 +67,7 @@ header .navbar .offcanvas-btn {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    gap: 7px;
+    gap: 7px
 }
 
 header .navbar .offcanvas-btn span {
@@ -79,56 +75,53 @@ header .navbar .offcanvas-btn span {
     height: 2.4px;
     background-color: #fff;
     transition: all ease 0.4s;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 header .navbar .offcanvas-btn:hover span {
-    background-color: rgb(2, 225, 147);
+    background-color: #02e193
 }
 
 header .navbar .offcanvas-btn:hover span:nth-child(1),
 header .navbar .offcanvas-btn:hover span:nth-child(3) {
     width: 60%;
     margin: 0 auto;
-    transition: all ease 0.4s;
+    transition: all ease 0.4s
 }
 
 header .navbar #follow {
     text-decoration: none;
-    color: white;
+    color: #fff;
     font-weight: 600;
     transform: rotate(-90deg);
     position: relative;
     bottom: 50px;
-    transition: all ease .3s;
+    transition: all ease .3s
 }
 
 header .navbar #login {
-    font-size: 30px;
+    font-size: 30px
 }
 
 header .navbar #login i {
-    transition: all ease .3s;
+    transition: all ease .3s
 }
 
 header .navbar #follow:hover,
 header .navbar #login:hover i {
-    color: rgb(2, 225, 147);
-    transition: all ease .3s;
+    color: #02e193;
+    transition: all ease .3s
 }
 
-
-
-/* navbar-content */
 header .nav-content {
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, #222327 50%, rgb(2, 225, 147)50%);
+    background: linear-gradient(45deg, #222327 50%, #02e193 50%);
     position: absolute;
     top: 0;
     left: 100%;
     z-index: 1;
-    transition: all ease .5;
+    transition: all .5s ease;
     display: flex;
     align-items: center;
     padding-left: 200px;
@@ -139,28 +132,27 @@ header .nav-content .nav-links {
     list-style: none;
     gap: 30px;
     transform: translateX(200px);
-    opacity: 0;
+    opacity: 0
 }
 
 header .nav-content .nav-links .links {
     text-decoration: none;
-    color: white;
+    color: #fff;
     font-size: 40px;
     text-transform: uppercase;
     font-weight: 700;
-    margin: 0;
+    margin: 0
 }
 
 header .nav-content .nav-links .links li {
-    transition: all ease .3s;
+    transition: all ease .3s
 }
 
 header .nav-content .nav-links .links li:hover {
-    color: rgb(2, 225, 147);
-    padding-left: 10px;
+    color: #02e193;
+    padding-left: 10px
 }
 
-/* text-content */
 header .text-content {
     position: absolute;
     top: 0;
@@ -168,34 +160,32 @@ header .text-content {
     width: 100%;
     height: 100%;
     z-index: 1;
-    padding-left: 250px;
+    padding-left: 250px
 }
 
 header .text-content #one {
     font-size: 90px;
     font-weight: 700;
     text-transform: uppercase;
-    color: white;
+    color: #fff;
     width: 50%;
     margin-top: 500px;
-    opacity: 0;
+    opacity: 0
 }
 
 header .text-content #one #ex {
     font-weight: 200;
-    padding-left: 250px;
+    padding-left: 250px
 }
 
-
 header .text-content #one #dg {
-    font-weight: 200;
+    font-weight: 200
 }
 
 header .text-content #one #wb {
-    padding-left: 100px;
+    padding-left: 100px
 }
 
-/* onload effect */
 header .loader-wrapper {
     position: absolute;
     top: 0;
@@ -207,7 +197,7 @@ header .loader-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all ease 1s;
+    transition: all ease 1s
 }
 
 header .loader-wrapper .loader {
@@ -217,7 +207,7 @@ header .loader-wrapper .loader {
     width: 44px;
     height: 44px;
     position: relative;
-    transition: all ease 1s;
+    transition: all ease 1s
 }
 
 .loader:before {
@@ -231,13 +221,13 @@ header .loader-wrapper .loader {
     top: 37px;
     left: 19px;
     transform: translate(-18px, -18px);
-    animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+    animation: dotRect var(--duration) cubic-bezier(.785, .135, .15, .86) infinite
 }
 
 .loader svg {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 100%
 }
 
 .loader svg rect,
@@ -247,147 +237,146 @@ header .loader-wrapper .loader {
     stroke: var(--path);
     stroke-width: 10px;
     stroke-linejoin: round;
-    stroke-linecap: round;
+    stroke-linecap: round
 }
 
 .loader svg polygon {
     stroke-dasharray: 145 76 145 76;
     stroke-dashoffset: 0;
-    animation: pathTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+    animation: pathTriangle var(--duration) cubic-bezier(.785, .135, .15, .86) infinite
 }
 
 .loader svg rect {
     stroke-dasharray: 192 64 192 64;
     stroke-dashoffset: 0;
-    animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+    animation: pathRect 3s cubic-bezier(.785, .135, .15, .86) infinite
 }
 
 .loader svg circle {
     stroke-dasharray: 150 50 150 50;
     stroke-dashoffset: 75;
-    animation: pathCircle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+    animation: pathCircle var(--duration) cubic-bezier(.785, .135, .15, .86) infinite
 }
 
 .loader.triangle {
-    width: 48px;
+    width: 48px
 }
 
 .loader.triangle:before {
     left: 21px;
     transform: translate(-10px, -18px);
-    animation: dotTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+    animation: dotTriangle var(--duration) cubic-bezier(.785, .135, .15, .86) infinite
 }
 
 @keyframes pathTriangle {
     33% {
-        stroke-dashoffset: 74;
+        stroke-dashoffset: 74
     }
 
     66% {
-        stroke-dashoffset: 147;
+        stroke-dashoffset: 147
     }
 
     100% {
-        stroke-dashoffset: 221;
+        stroke-dashoffset: 221
     }
 }
 
 @keyframes dotTriangle {
     33% {
-        transform: translate(0, 0);
+        transform: translate(0, 0)
     }
 
     66% {
-        transform: translate(10px, -18px);
+        transform: translate(10px, -18px)
     }
 
     100% {
-        transform: translate(-10px, -18px);
+        transform: translate(-10px, -18px)
     }
 }
 
 @keyframes pathRect {
     25% {
-        stroke-dashoffset: 64;
+        stroke-dashoffset: 64
     }
 
     50% {
-        stroke-dashoffset: 128;
+        stroke-dashoffset: 128
     }
 
     75% {
-        stroke-dashoffset: 192;
+        stroke-dashoffset: 192
     }
 
     100% {
-        stroke-dashoffset: 256;
+        stroke-dashoffset: 256
     }
 }
 
 @keyframes dotRect {
     25% {
-        transform: translate(0, 0);
+        transform: translate(0, 0)
     }
 
     50% {
-        transform: translate(18px, -18px);
+        transform: translate(18px, -18px)
     }
 
     75% {
-        transform: translate(0, -36px);
+        transform: translate(0, -36px)
     }
 
     100% {
-        transform: translate(-18px, -18px);
+        transform: translate(-18px, -18px)
     }
 }
 
 @keyframes pathCircle {
     25% {
-        stroke-dashoffset: 125;
+        stroke-dashoffset: 125
     }
 
     50% {
-        stroke-dashoffset: 175;
+        stroke-dashoffset: 175
     }
 
     75% {
-        stroke-dashoffset: 225;
+        stroke-dashoffset: 225
     }
 
     100% {
-        stroke-dashoffset: 275;
+        stroke-dashoffset: 275
     }
 }
 
 .loader {
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 16px
 }
 
-/* modal */
 header .modal .modal-body .form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 30px;
     width: 450px;
     border-radius: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 ::placeholder {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 .form button {
-    align-self: flex-end;
+    align-self: flex-end
 }
 
 .flex-column>label {
     color: #151717;
-    font-weight: 600;
+    font-weight: 600
 }
 
 .inputForm {
@@ -397,7 +386,7 @@ header .modal .modal-body .form {
     display: flex;
     align-items: center;
     padding-left: 10px;
-    transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out
 }
 
 .input {
@@ -406,15 +395,15 @@ header .modal .modal-body .form {
     border: none;
     width: 85%;
     height: 100%;
-    color: #151717;
+    color: #151717
 }
 
 .input:focus {
-    outline: none;
+    outline: none
 }
 
 .inputForm:focus-within {
-    border: 1.5px solid #2d79f3;
+    border: 1.5px solid #2d79f3
 }
 
 .flex-row {
@@ -422,13 +411,13 @@ header .modal .modal-body .form {
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 .flex-row>div>label {
     font-size: 14px;
-    color: black;
-    font-weight: 400;
+    color: #000;
+    font-weight: 400
 }
 
 .span {
@@ -436,31 +425,31 @@ header .modal .modal-body .form {
     margin-left: 5px;
     color: #2d79f3;
     font-weight: 500;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .button-submit {
     margin: 20px 0 10px 0;
     background-color: #151717;
     border: none;
-    color: white;
+    color: #fff;
     font-size: 15px;
     font-weight: 500;
     border-radius: 10px;
     height: 50px;
     width: 100%;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .button-submit:hover {
-    background-color: #252727;
+    background-color: #252727
 }
 
 .p {
     text-align: center;
-    color: black;
+    color: #000;
     font-size: 14px;
-    margin: 5px 0;
+    margin: 5px 0
 }
 
 .btn {
@@ -475,46 +464,44 @@ header .modal .modal-body .form {
     gap: 10px;
     border: 1px solid #ededef;
     cursor: pointer;
-    transition: all ease .3s;
+    transition: all ease .3s
 }
 
 .btn.google:hover,
 .btn.apple:hover {
     color: #4b92d0;
-    transition: all ease .3s;
+    transition: all ease .3s
 }
 
-/* media query */
-
-@media (max-width: 1080px) {
+@media (max-width:1080px) {
     header .text-content #one {
-        font-size: 75px;
+        font-size: 75px
     }
 
     header .nav-content {
-        background: linear-gradient(48.5deg, #222327 60%, rgb(2, 225, 147) 40%);
+        background: linear-gradient(48.5deg, #222327 60%, #02e193 40%)
     }
 }
 
-@media (max-width: 965px) {
+@media (max-width:965px) {
     header .text-content #one {
-        font-size: 65px;
+        font-size: 65px
     }
 
     header .text-content #one #ex {
-        padding-left: 87px;
+        padding-left: 87px
     }
 
     header .text-content {
         align-items: center;
         justify-content: center;
-        padding-left: 50px;
+        padding-left: 50px
     }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width:767.98px) {
     header .text-content {
-        padding-left: 60px;
+        padding-left: 60px
     }
 
     header .text-content #one {
@@ -522,25 +509,23 @@ header .modal .modal-body .form {
         font-size: 55px;
         font-weight: 400;
         width: 45%;
-        text-transform: capitalize;
+        text-transform: capitalize
     }
 
     header .nav-content {
         background: #222327;
         padding: 0;
-        justify-content: center;
+        justify-content: center
     }
 }
 
-
-@media (max-width: 575px) {
+@media (max-width:575px) {
     header {
-        height: 900px;
+        height: 900px
     }
 
-
     header .main-content {
-        width: 100%;
+        width: 100%
     }
 
     header .main-content .navbar {
@@ -549,58 +534,54 @@ header .modal .modal-body .form {
         padding: 20px;
         justify-content: space-between;
         border-right: none;
-        border-bottom: 1px solid #8888886f;
+        border-bottom: 1px solid #8888886f
     }
 
     header .main-content .navbar #follow {
-        display: none;
+        display: none
     }
 
-    /* --- */
     header .text-content {
-        padding-left: 0px;
+        padding-left: 0
     }
-
 
     header .text-content #one {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: center
     }
 
     header .text-content #one #ex,
     header .text-content #one #wb,
     header .text-content #one #dg {
-        padding-left: 0px;
-        font-weight: 400;
+        padding-left: 0;
+        font-weight: 400
     }
 
     header .nav-content .nav-links .links {
-        font-size: 30px;
+        font-size: 30px
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width:480px) {
     header .text-content #one {
-        font-size: 45px;
+        font-size: 45px
     }
 }
 
-/* section-1 */
 .sec1 {
     padding-top: 100px;
     padding-bottom: 60px;
-    overflow: hidden;
+    overflow: hidden
 }
 
-/* 1st */
 .sec1 .container .about .first #heading {
-    color: white;
+    color: #fff;
     font-size: 50px;
     width: 75%;
-    margin: 0;
+    margin: 0
 }
 
 .sec1 .container .about .first .btn {
@@ -613,29 +594,27 @@ header .modal .modal-body .form {
     padding: 1.8rem 2.3rem;
     border: none;
     outline: none;
-    border-radius: 0.4rem;
+    border-radius: .4rem;
     cursor: pointer;
     text-transform: uppercase;
-    background-color: rgb(27, 27, 37);
-    color: rgb(234, 234, 234);
+    background-color: #1b1b25;
+    color: #eaeaea;
     font-weight: 700;
-    box-shadow: 0px 0px 60px rgba(2, 225, 147, 0.147);
-    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.2));
-    transition: all ease .7s;
+    box-shadow: 0 0 60px rgb(2 225 147 / .147);
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, #fff0, rgb(0 0 0 / .2));
+    transition: all ease .7s
 }
 
 .sec1 .container .about .first .btn:hover {
-    background-color: rgb(3, 255, 167);
+    background-color: #03ffa7;
     color: #222327;
-    transition: all ease .7s;
+    transition: all ease .7s
 }
-
-/* 2nd */
 
 .sec1 .container .about .second #para {
     font-size: 20px;
     font-weight: 200;
-    margin-bottom: 40px;
+    margin-bottom: 40px
 }
 
 .sec1 .container .about .second #name {
@@ -643,37 +622,37 @@ header .modal .modal-body .form {
     font-weight: 600;
     width: fit-content;
     position: relative;
-    margin: 0;
+    margin: 0
 }
 
 .sec1 .container .about .second #name::after {
     content: "";
     width: 70px;
     height: 1.5px;
-    background-color: #ffffff;
+    background-color: #fff;
     position: absolute;
     top: 16px;
-    right: -90px;
+    right: -90px
 }
 
 .sec1 .container .about .second #work {
     font-family: "Josefin Sans", sans-serif;
     font-size: 13px;
     color: #9b9b9b;
-    margin-top: 2px;
+    margin-top: 2px
 }
 
 .sec1 .container .about .second #exp {
     margin-top: 20px;
     display: flex;
-    gap: 20px;
+    gap: 20px
 }
 
 .sec1 .container .about .second #exp #num {
     font-size: 120px;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 600;
-    margin: 0;
+    margin: 0
 }
 
 .sec1 .container .about .second #exp #txt {
@@ -681,91 +660,87 @@ header .modal .modal-body .form {
     font-weight: 600;
     line-height: 25px;
     letter-spacing: .5px;
-    color: #ffffff;
+    color: #fff;
     margin-top: 37px;
-    margin-bottom: 0;
+    margin-bottom: 0
 }
-
 
 .sec1 .container .about .first .s1-one {
     opacity: 0;
     padding-top: 70px;
-    transition: all ease .7s;
+    transition: all ease .7s
 }
 
 .sec1 .container .about .second .s1-two {
     opacity: 0;
     padding-top: 70px;
-    transition: all ease .7s;
+    transition: all ease .7s
 }
 
-/* media query */
-
-@media (max-width: 1399.98px) {
+@media (max-width:1399.98px) {
     .sec1 .container .about .first #heading {
-        font-size: 44px;
+        font-size: 44px
     }
 
     .sec1 .container .about .second #para {
-        font-size: 19px;
+        font-size: 19px
     }
 
     .sec1 .container .about .second #name {
-        font-size: 21px;
+        font-size: 21px
     }
 
     .sec1 .container .about .second #exp #num {
-        font-size: 115px;
+        font-size: 115px
     }
 
     .sec1 .container .about .second #exp #txt {
         font-size: 19px;
-        margin-top: 32px;
+        margin-top: 32px
     }
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width:1199.98px) {
     .sec1 .container .about .first #heading {
-        font-size: 36px;
+        font-size: 36px
     }
 
     .sec1 .container .about .first .btn {
-        font-size: 1.1rem;
+        font-size: 1.1rem
     }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width:767.98px) {
     .sec1 .container .about .first {
-        margin-bottom: 100px;
+        margin-bottom: 100px
     }
 
     .sec1 .container .about .first #heading {
         width: 78%;
-        font-size: 42px;
+        font-size: 42px
     }
 }
 
-@media (max-width: 574.98px) {
+@media (max-width:574.98px) {
     .sec1 .container .about .first #heading {
-        font-size: 35px;
+        font-size: 35px
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width:480px) {
     .sec1 .container .about .second #para {
-        font-size: 18px;
+        font-size: 18px
     }
 
     .sec1 .container .about .first #heading {
-        width: 89%;
+        width: 89%
     }
 }
 
-/* section-2 */
 .sec2 {
     padding: 100px 0;
     background: #202325;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .sec2 .container .heading h1 {
@@ -773,38 +748,35 @@ header .modal .modal-body .form {
     width: 40%;
     position: relative;
     opacity: 0;
-    transition: all ease .5s;
+    transition: all ease .5s
 }
 
 .sec2 .container .heading h1 #after {
     width: 1.5px;
     height: 130px;
-    background: rgb(3, 255, 167);
+    background: #03ffa7;
     position: absolute;
     bottom: -30px;
     right: 50%;
     opacity: 0;
-    transition: all ease .5s;
+    transition: all ease .5s
 }
-
 
 .sec2 .container .heading h1 #before {
     width: 1.5px;
     height: 130px;
-    background: white;
+    background: #fff;
     position: absolute;
     top: -70px;
     left: 50%;
     opacity: 0;
-    transition: all ease .5s;
+    transition: all ease .5s
 }
-
-/* card-wrapper */
 
 .sec2 .container .card-wrapper {
     transform: translateY(200px);
     opacity: 0;
-    transition: all ease-in .5s;
+    transition: all ease-in .5s
 }
 
 .sec2 .container .card-wrapper .crd {
@@ -815,37 +787,37 @@ header .modal .modal-body .form {
     position: relative;
     z-index: 2;
     overflow: hidden;
-    transition: all ease .3s;
+    transition: all ease .3s
 }
 
 .sec2 .container .card-wrapper .crd #inner-eff {
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     position: absolute;
     top: 0;
     left: 0;
-    background: rgb(2, 225, 147);
+    background: #02e193;
     border-bottom-right-radius: 150px;
     opacity: 0;
-    transition: all ease .3s;
+    transition: all ease .3s
 }
 
 .sec2 .container .card-wrapper .crd:hover #inner-eff {
     width: 100px;
     height: 100px;
-    opacity: 1;
+    opacity: 1
 }
 
 .sec2 .container .card-wrapper .crd-wrap {
     width: fit-content;
     height: fit-content;
     position: relative;
-    transition: all ease .3s;
+    transition: all ease .3s
 }
 
 .sec2 .container .card-wrapper .crd-wrap:hover .crd {
     background: #141414;
-    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.184);
+    box-shadow: 15px 15px 30px rgb(0 0 0 / .184)
 }
 
 .sec2 .container .card-wrapper .crd-wrap #dots {
@@ -856,130 +828,127 @@ header .modal .modal-body .form {
     bottom: -40px;
     z-index: 0;
     opacity: 0;
-    transition: all ease .3s;
+    transition: all ease .3s
 }
 
 .sec2 .container .card-wrapper .crd-wrap:hover #dots {
-    opacity: 1;
+    opacity: 1
 }
 
 .sec2 .container .card-wrapper .crd #icon {
     width: 70px;
     height: 80px;
-    margin-bottom: 35px;
+    margin-bottom: 35px
 }
 
 .sec2 .container .card-wrapper .crd #title {
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
 .sec2 .container .card-wrapper .crd #list {
     list-style: none;
     padding-left: 0;
-    gap: 10px;
+    gap: 10px
 }
 
 .sec2 .container .card-wrapper .crd #list li {
     font-weight: 300;
     color: #b7b7b7;
     cursor: pointer;
-    transition: all ease .3s;
+    transition: all ease .3s
 }
 
 .sec2 .container .card-wrapper .crd #list li:hover {
-    color: rgb(3, 255, 167);
+    color: #03ffa7
 }
 
-/* media query */
-
-@media (max-width: 1399.98px) {
+@media (max-width:1399.98px) {
     .sec2 .container .heading h1 {
-        width: 50%;
+        width: 50%
     }
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width:1199.98px) {
     .sec2 .container .heading h1 {
         width: 60%;
-        font-size: 47px;
+        font-size: 47px
     }
 
     .sec2 .container .card-wrapper .crd {
-        width: 350px;
+        width: 350px
     }
 
     .sec2 .container .card-wrapper .crd #icon {
         width: 100px;
-        height: 100px;
+        height: 100px
     }
 
     .sec2 .container .card-wrapper .crd #title {
-        font-size: 1.35rem;
+        font-size: 1.35rem
     }
 
     .sec2 .container .card-wrapper .crd #list {
-        gap: 18px;
+        gap: 18px
     }
 
     .sec2 .container .card-wrapper .crd #list li {
-        font-size: 18px;
+        font-size: 18px
     }
 
     .sec2 .container .card-wrapper .crd-wrap #dots {
         width: 170px;
         height: 260px;
         right: -33px;
-        bottom: -33px;
+        bottom: -33px
     }
 }
 
-@media (max-width: 990.98px) {
+@media (max-width:990.98px) {
     .sec2 .container .card-wrapper .crd {
-        width: 310px;
+        width: 310px
     }
 
     .sec2 .container .heading h1 {
-        width: 84%;
+        width: 84%
     }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width:767.98px) {
     .sec2 .container .heading h1 {
         font-size: 40px;
-        width: 97%;
+        width: 97%
     }
 
     .sec2 .container .card-wrapper .crd {
-        width: 460px;
+        width: 460px
     }
 
     .sec2 .container .card-wrapper .crd #title {
         margin-bottom: 35px;
-        font-size: 1.45rem;
+        font-size: 1.45rem
     }
 
     .sec2 .container .card-wrapper .crd #list li {
-        font-size: 19px;
+        font-size: 19px
     }
 }
 
-@media (max-width: 574.98px) {
+@media (max-width:574.98px) {
     .sec2 .container .card-wrapper {
-        width: 100%;
+        width: 100%
     }
 
     .sec2 .container .card-wrapper .crd-wrap {
-        width: 100%;
+        width: 100%
     }
 
     .sec2 .container .card-wrapper .crd-wrap .crd {
-        width: 100%;
+        width: 100%
     }
 }
 
-/* section-3 */
 .sec3 {
-    padding: 100px 0;
+    padding: 100px 0
 }
 
 .sec3 .container .main-wrapper .crd-wrap {
@@ -987,30 +956,30 @@ header .modal .modal-body .form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center
 }
 
 .sec3 .container .main-wrapper .crd-wrap:nth-child(2),
 .sec3 .container .main-wrapper .crd-wrap:nth-child(5) {
-    margin-top: 100px;
+    margin-top: 100px
 }
 
 .sec3 .container .main-wrapper .crd-wrap .img-wrap {
     width: 90%;
     height: 90%;
-    transition: all ease .3s;
+    transition: all ease .3s
 }
 
 .sec3 .container .main-wrapper .crd-wrap .img-wrap #pic {
-    transition: all ease .3s;
+    transition: all ease .3s
 }
 
 .sec3 .container .main-wrapper .crd-wrap .img-wrap:hover #pic {
-    transform: scale(1.01);
+    transform: scale(1.01)
 }
 
 .sec3 .container .main-wrapper .crd-wrap .img-wrap:hover {
-    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 15px 15px 30px rgb(0 0 0 / .3)
 }
 
 .sec3 .container .main-wrapper .crd-wrap .img-wrap #dots {
@@ -1022,98 +991,91 @@ header .modal .modal-body .form {
     height: 250px;
     transform: rotate(90deg);
     opacity: 0;
-    transition: all ease .3s;
+    transition: all ease .3s
 }
 
 .sec3 .container .main-wrapper .crd-wrap .img-wrap:hover #dots {
-    opacity: 1;
+    opacity: 1
 }
 
 .sec3 .container .main-wrapper .crd-wrap .txt-wrap {
     width: 90%;
     padding-top: 30px;
-    background: transparent;
+    background: #fff0
 }
 
 .sec3 .container .main-wrapper .crd-wrap .txt-wrap h2 {
-    color: white;
+    color: #fff;
     font-size: 27px;
     font-weight: 600;
-    margin: 0;
+    margin: 0
 }
 
 .sec3 .container .main-wrapper .crd-wrap .txt-wrap p {
-    color: rgb(173, 173, 173);
+    color: #adadad;
     font-size: 12px;
     font-weight: 600;
-    margin: 0;
+    margin: 0
 }
 
 .sec3 .container .s3-wrapper {
     padding-top: 200px;
     opacity: 0;
-    transition: all ease .5s;
+    transition: all ease .5s
 }
 
-/* media query */
-
-@media (max-width: 1199.98px) {
+@media (max-width:1199.98px) {
     .sec3 .container .main-wrapper .crd-wrap .txt-wrap h2 {
-        font-size: 22px;
+        font-size: 22px
     }
 
     .sec3 .container .main-wrapper .crd-wrap .txt-wrap p {
         font-size: 10px;
         margin-top: 2px;
-        font-weight: 500;
+        font-weight: 500
     }
 
     .sec3 .container .main-wrapper .crd-wrap .img-wrap #dots {
         width: 110px;
         height: 220px;
-        right: -57px;
+        right: -57px
     }
 }
 
-@media (max-width: 990.98px) {
+@media (max-width:990.98px) {
 
     .sec3 .container .main-wrapper .crd-wrap:nth-child(4),
     .sec3 .container .main-wrapper .crd-wrap:nth-child(6) {
-        margin-top: 50px;
+        margin-top: 50px
     }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width:767.98px) {
 
     .sec3 .container .main-wrapper .crd-wrap:nth-child(2),
     .sec3 .container .main-wrapper .crd-wrap:nth-child(3),
     .sec3 .container .main-wrapper .crd-wrap:nth-child(4),
     .sec3 .container .main-wrapper .crd-wrap:nth-child(5) {
-        margin-top: 50px;
+        margin-top: 50px
     }
 
     .sec3 .container .main-wrapper .crd-wrap .img-wrap #dots {
         width: 175px;
         height: 234px;
-        right: -28px;
+        right: -28px
     }
-
 }
 
-@media (max-width: 480px) {
+@media (max-width:480px) {
     .sec3 .container .main-wrapper .crd-wrap .img-wrap #dots {
-
         width: 135px;
-        height: 225px;
+        height: 225px
     }
 }
 
-/* section-4 */
 .sec4 {
-    padding: 100px 0;
+    padding: 100px 0
 }
-
-/*  */
 
 .sec4 .container .main-wrapper .company .logo-wrapper .box {
     width: 33.33%;
@@ -1122,7 +1084,7 @@ header .modal .modal-body .form {
     border: 1px solid #272727;
     cursor: pointer;
     position: relative;
-    transition: all ease-in .3s;
+    transition: all ease-in .3s
 }
 
 .sec4 .container .main-wrapper .company .logo-wrapper .box::before {
@@ -1134,14 +1096,14 @@ header .modal .modal-body .form {
     height: 0;
     opacity: 0;
     border-bottom-right-radius: 100%;
-    background-color: rgba(2, 225, 147, 0.101);
-    transition: all ease-in .3s;
+    background-color: rgb(2 225 147 / .101);
+    transition: all ease-in .3s
 }
 
 .sec4 .container .main-wrapper .company .logo-wrapper .box:hover::before {
     width: 140%;
     height: 140%;
-    opacity: 1;
+    opacity: 1
 }
 
 .sec4 .container .main-wrapper .company .logo-wrapper .box img {
@@ -1149,15 +1111,14 @@ header .modal .modal-body .form {
     height: 45px;
     position: relative;
     top: 0;
-    z-index: 1;
+    z-index: 1
 }
 
-/*  */
 .sec4 .container .main-wrapper .txt-wrap #para {
     font-size: 14.5px;
-    color: #bbbbbb;
+    color: #bbb;
     font-weight: 300;
-    width: 95%;
+    width: 95%
 }
 
 .sec4 .container .main-wrapper .txt-wrap .btn {
@@ -1170,141 +1131,137 @@ header .modal .modal-body .form {
     padding: 1.8rem 2.3rem;
     border: none;
     outline: none;
-    border-radius: 0.4rem;
+    border-radius: .4rem;
     cursor: pointer;
     text-transform: uppercase;
-    background-color: rgb(27, 27, 37);
-    color: rgb(234, 234, 234);
+    background-color: #1b1b25;
+    color: #eaeaea;
     font-weight: 700;
-    box-shadow: 0px 0px 60px rgba(2, 225, 147, 0.147);
-    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.2));
-    transition: all ease .7s;
+    box-shadow: 0 0 60px rgb(2 225 147 / .147);
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, #fff0, rgb(0 0 0 / .2));
+    transition: all ease .7s
 }
 
 .sec4 .container .main-wrapper .txt-wrap .btn:hover {
-    background-color: rgb(3, 255, 167);
+    background-color: #03ffa7;
     color: #222327;
-    transition: all ease .7s;
+    transition: all ease .7s
 }
 
 .sec4 .container .main-wrapper .s4-one {
     padding-top: 200px;
     opacity: 0;
-    transition: all ease-in .5s;
-
+    transition: all ease-in .5s
 }
 
 .sec4 .container .main-wrapper .s4-two {
     opacity: 0;
-    transition: all ease-in .5s;
+    transition: all ease-in .5s
 }
 
-/* media query */
-
-@media (max-width: 1399.98px) {
+@media (max-width:1399.98px) {
     .sec4 {
-        padding-top: 0;
+        padding-top: 0
     }
 
     .sec4 .container .main-wrapper .company .logo-wrapper .box img {
         width: 140px;
-        height: 40px;
+        height: 40px
     }
 
     .sec4 .container .main-wrapper .txt-wrap #heading {
         font-size: 32px;
         width: 80%;
-        line-height: 42px;
+        line-height: 42px
     }
 
     .sec4 .container .main-wrapper .txt-wrap #para {
         width: 75%;
-        line-height: 24px;
+        line-height: 24px
     }
 
     .sec4 .container .main-wrapper .txt-wrap .btn {
-        margin-top: 50px;
+        margin-top: 50px
     }
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width:1199.98px) {
     .sec4 .container .main-wrapper .company .logo-wrapper .box img {
         width: 125px;
-        height: 35px;
+        height: 35px
     }
 
     .sec4 .container .main-wrapper .txt-wrap #heading {
         font-size: 29px;
-        width: 90%;
+        width: 90%
     }
 
     .sec4 .container .main-wrapper .txt-wrap #para {
         width: 85%;
         font-size: 13.7px;
-        line-height: 23px;
+        line-height: 23px
     }
 
     .sec4 .container .main-wrapper .txt-wrap .btn {
-        font-size: 1.1rem;
+        font-size: 1.1rem
     }
 }
 
-@media (max-width: 990.98px) {
+@media (max-width:990.98px) {
     .sec4 .container .main-wrapper .txt-wrap #heading {
         font-size: 35px;
         width: 65%;
-        line-height: 44px;
+        line-height: 44px
     }
 
     .sec4 .container .main-wrapper .txt-wrap #para {
         width: 85%;
         font-size: 14px;
-        line-height: 23px;
+        line-height: 23px
     }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width:767.98px) {
     .sec4 .container .main-wrapper .txt-wrap #heading {
         font-size: 35px;
         width: 85%;
-        line-height: 44px;
+        line-height: 44px
     }
 
     .sec4 .container .main-wrapper .txt-wrap #para {
-        width: 100%;
+        width: 100%
     }
 
     .sec4 .container .main-wrapper .txt-wrap .btn {
-        margin-top: 25px;
+        margin-top: 25px
     }
 }
 
-@media (max-width: 574.98px) {
+@media (max-width:574.98px) {
     .sec4 .container .main-wrapper .company .logo-wrapper .box {
-        width: 50%;
+        width: 50%
     }
 }
 
-/* footer */
 footer {
     padding-top: 100px;
     background-color: #151717;
     background-image: url(../images/footer-bg.png);
     background-size: 80% auto;
     background-position: top center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat
 }
 
 footer .container .row .first .logo img {
     width: 100px;
-    height: 115px;
+    height: 115px
 }
 
 footer .container .row .first .logo h1 {
     font-size: 30px;
     font-weight: 700;
     margin: 0;
-    letter-spacing: .3px;
+    letter-spacing: .3px
 }
 
 footer .container .row .first #para {
@@ -1312,22 +1269,22 @@ footer .container .row .first #para {
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
-    width: 90%;
+    width: 90%
 }
 
 footer .container .row .second #title {
-    font-weight: 600;
+    font-weight: 600
 }
 
 footer .container .row .second #para {
     font-weight: 300;
     font-size: 13px;
     color: #9b9b9b;
-    margin: 0;
+    margin: 0
 }
 
 footer .container .row .second .inp-grp {
-    margin-top: 30px;
+    margin-top: 30px
 }
 
 footer .container .row .second .inp-grp .messageBox {
@@ -1335,59 +1292,59 @@ footer .container .row .second .inp-grp .messageBox {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: transparent;
+    background-color: #fff0;
     padding: 15px 15px;
     border-radius: 10px;
-    border: 1px solid rgb(63, 63, 63);
+    border: 1px solid #3f3f3f
 }
 
 .messageBox:focus-within {
-    border: 1px solid rgb(110, 110, 110);
+    border: 1px solid #6e6e6e
 }
 
 #messageInput {
     width: 100%;
     height: 100%;
-    background-color: transparent;
+    background-color: #fff0;
     outline: none;
     border: none;
     padding-left: 10px;
     padding-right: 10px;
-    color: white;
-    font-weight: 300;
+    color: #fff;
+    font-weight: 300
 }
 
 #messageInput:focus~#sendButton svg path,
 #messageInput:valid~#sendButton svg path {
     fill: #3c3c3c;
-    stroke: white;
+    stroke: #fff
 }
 
 #sendButton {
     width: fit-content;
     height: 100%;
-    background-color: transparent;
+    background-color: #fff0;
     outline: none;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.3s
 }
 
 #sendButton svg {
     height: 18px;
-    transition: all 0.3s;
+    transition: all 0.3s
 }
 
 #sendButton svg path {
-    transition: all 0.3s;
+    transition: all 0.3s
 }
 
 #sendButton:hover svg path {
     fill: #3c3c3c;
-    stroke: white;
+    stroke: #fff
 }
 
 footer .container .row .second #social {
@@ -1395,10 +1352,8 @@ footer .container .row .second #social {
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 600;
-    color: rgb(213, 213, 213);
+    color: #d5d5d5
 }
-
-/* social Buttons */
 
 footer .container .row .second .icon-grp .button {
     cursor: pointer;
@@ -1412,38 +1367,38 @@ footer .container .row .second .icon-grp .button {
     align-items: center;
     justify-content: center;
     margin-top: 10px;
-    transition: 0.1s;
+    transition: 0.1s
 }
 
 footer .container .row .second .icon-grp .button svg {
-    color: white;
+    color: #fff;
     width: 25px;
     height: 25px;
-    z-index: 9;
+    z-index: 9
 }
 
 footer .container .row .second .icon-grp .button:nth-child(1) {
-    background: linear-gradient(120deg, #833ab4, #fd1d1d, #fcb045);
+    background: linear-gradient(120deg, #833ab4, #fd1d1d, #fcb045)
 }
 
 footer .container .row .second .icon-grp .button:nth-child(2) {
-    background: linear-gradient(120deg, #02ff2c, #008a12);
+    background: linear-gradient(120deg, #02ff2c, #008a12)
 }
 
 footer .container .row .second .icon-grp .button:nth-child(3) {
-    background: rgb(69, 187, 255);
+    background: #45bbff
 }
 
 footer .container .row .second .icon-grp .button:nth-child(4) {
-    background: rgb(255, 33, 33);
+    background: #ff2121
 }
 
 footer .container .row .second .icon-grp .button:nth-child(5) {
-    background: black;
+    background: #000
 }
 
 footer .container .row .second .icon-grp .button:active {
-    transform: scale(0.85);
+    transform: scale(.85)
 }
 
 footer .container .row .second .icon-grp .button::before {
@@ -1454,59 +1409,55 @@ footer .container .row .second .icon-grp .button::before {
     background-color: #212121;
     border-radius: 50px;
     z-index: -1;
-    border: 1px solid rgb(43, 43, 43);
-    transition: 0.4s;
+    border: 1px solid #2b2b2b;
+    transition: 0.4s
 }
 
 footer .container .row .second .icon-grp .button:hover::before {
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0
 }
-
-/*  */
 
 footer .container .row .last {
     border-top: 1px solid #424242;
-    padding: 50px 0;
+    padding: 50px 0
 }
 
 footer .container .row .last #one,
 footer .container .row .last #two {
     margin: 0;
-    font-size: 14px;
+    font-size: 14px
 }
 
 footer .container .row .last #two span {
-    color: rgb(3, 255, 167);
-    text-decoration: underline;
+    color: #03ffa7;
+    text-decoration: underline
 }
 
-/* media query */
-
-@media (max-width: 1199.98px) {
+@media (max-width:1199.98px) {
     footer {
         background-position: bottom center;
-        background-size: 90% auto;
+        background-size: 90% auto
     }
 
     footer .container .row .first .logo img {
         width: 90px;
-        height: 102px;
+        height: 102px
     }
 
     footer .container .row .second #title {
-        font-size: 28px;
+        font-size: 28px
     }
 }
 
-@media (max-width: 574.98px) {
+@media (max-width:574.98px) {
     footer .container .row .last {
         flex-direction: column;
-        gap: 5px;
+        gap: 5px
     }
 
     footer .container .row .last #one,
     footer .container .row .last #two {
-        font-size: 15px;
+        font-size: 15px
     }
 }
